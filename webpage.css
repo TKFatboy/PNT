@@ -2,3 +2,12 @@ p {
     color: orangered;
     font-weight: bold;
 }
+
+h1{
+    color:darkgreen;
+    font-weight: bold;
+}
+
+body {
+   background-color: aqua;
+}
