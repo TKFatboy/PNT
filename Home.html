@@ -1,31 +1,97 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Menu</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
+
 <body>
-    <div class="movie-card">
-        <img src="Harry.png" class="movie-picture" alt="" />
-        <div class="header-section">
-            <h1>Harry Potter</h1>
-            <p>philosopher's stone (ภาคแรก)</p>
+    <!-- Header Navbar -->
+    <header>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
         </div>
-        <div class="movie-description">
-            <p>
-                หนังแฮรี่พอตเตอร์
-            </p>
-            <div class="icons">
-                <a class="icon">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="icon">
-                    <i></i>
-                </a>
+        <div class="navbar">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="#" >
+                        <i class="fa-solid fa-clapperboard fa-2xl" class="icon-logo"></i>
+                        <span>PNT Project</span>
+                    </a>
+                </div>
+                <ul class="main-menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Nu.html">Movie</a></li>
+                    <li><a href="Anime.html">Anime</a></li>
+                    <li><a href="Review.html">Review</a></li>
+                    <li><a href="Member.html">Member</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Home Menu Content -->
+    <div class="background-wrapper">
+        <div class="home-content">
+            <div class="bg-shape">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405214/starwars/logo.webp" alt="">
+            </div>
+            <div class="box-star-content">
+                <div class="content-card">
+                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405223/starwars/item-4-bg.webp" alt="star wars" class="content-cover">
+                    <div class="content-detail">
+                        <div class="text-content">
+                        <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์รีวิวหนังโปรเจค PNT</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Culpa molestiae qui harum delectus illo odio, alias 
+                            laborum facere ad modi exercitationem quas ut 
+                            dolorum molestias repudiandae expedita nemo, 
+                            asdadadasdasdaquos quae.</p>
+                        <a href="Movie.html" class="btn-welcome">เข้าเยี่ยมชมเลย</a>
+                        </div>
+
+                        <div class="light-saber-box">
+
+                            <div id='lightsaber'>
+                                <!--  light saber handle -->
+                                <div class='handle-2' style='height: 10px; border-radius: 3px 3px 0 0;'></div>
+                                <div class='handle-2' style='height: 10px; width: 38px; box-shadow: 2px 2px 2px black inset, -1px -1px 2px black inset;'></div>
+                                <div class='handle-2' style='height: 10px; border-radius: 0;'></div>
+                                <div class='handle-3'></div>
+                                <div class='handle-2' style='border-radius: 0px 0 3px 3px;'></div>
+                                <div class='handle-1'></div>
+                                <div class='handle-1'></div>
+                                <div class='handle-1'></div>
+                                <div class='handle-2' style='width: 12px; height: 15px;'></div>
+                                <div class='handle-2' style='width: 23px; height: 7px;'></div>
+                                <div class='handle-2' style='width: 33px; height: 5px;'></div>
+                                <!-- light -->
+                                <div class='light-container'>
+                                    <div class='light' id='light'></div>
+                                    <div class='light2'></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- light saber color -->
+                        <div class="color-selector">
+                            <!-- <label>CHOOSE</label> -->
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <button class='color' id='blue' onclick='changeColor("blue")'></button>
+                            <button class='color' id='red' onclick='changeColor("red")'></button>
+                            <button class='color' id='green' onclick='changeColor("#00a200")'></button>
+                            <button class='color' id='yellow' onclick='changeColor("#9d9b0a")'></button>
+                            <button class='color' id='purple' onclick='changeColor("#a706ec")'></button>
+                            <input class='color' id='color' type='color' value='#000000'>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</body>
+    </body>
 </html>
