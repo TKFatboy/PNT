@@ -16,17 +16,17 @@
         <div class="navbar">
             <nav class="main-nav">
                 <div class="logo">
-                    <a href="#" >
+                    <a href="Home.html" id="Home-menu" >
                         <i class="fa-solid fa-clapperboard fa-2xl" class="icon-logo"></i>
-                        <span>PNT Project</span>
+                        <span>PNT &nbsp; Project</span>
                     </a>
                 </div>
                 <ul class="main-menu">
                     <li><a href="Home.html">Home</a></li>
-                    <li><a href="Nu.html">Movie</a></li>
-                    <li><a href="Anime.html">Anime</a></li>
-                    <li><a href="Review.html">Review</a></li>
-                    <li><a href="Member.html">Member</a></li>
+                    <li><a href="./Layout/Movie.html">Movie</a></li>
+                    <li><a href="./Layout/Anime.html">Anime</a></li>
+                    <li><a href="./Layout/Review.html">Review</a></li>
+                    <li><a href="./Layout/Member.html">Member</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,7 +49,7 @@
                             laborum facere ad modi exercitationem quas ut 
                             dolorum molestias repudiandae expedita nemo, 
                             asdadadasdasdaquos quae.</p>
-                        <a href="Movie.html" class="btn-welcome">เข้าเยี่ยมชมเลย</a>
+                        <a href="./Layout/Movie.html" class="btn-welcome">เข้าเยี่ยมชมเลย</a>
                         </div>
 
                         <div class="light-saber-box">
@@ -85,13 +85,25 @@
                             <button class='color' id='green' onclick='changeColor("#00a200")'></button>
                             <button class='color' id='yellow' onclick='changeColor("#9d9b0a")'></button>
                             <button class='color' id='purple' onclick='changeColor("#a706ec")'></button>
+                            <div> &nbsp; </div>
+                            <div>&nbsp; Pick color:</div>
+                            <div> &nbsp; </div>
                             <input class='color' id='color' type='color' value='#000000'>
                         </div>
-                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </body>
+    <script>
+        document.getElementById("color").addEventListener("input", function (e) {
+            document.documentElement.style.setProperty('--color', e.target.value);
+        });
+
+        function changeColor(color) {
+            document.documentElement.style.setProperty('--color', color);
+        }
+    </script>
 </html>
